@@ -18,3 +18,5 @@ docker build -t your-image-name .
 ```bash
 docker-compose up -d
 ```
+
+### NOte: Place the necessary files in the dag directory of airflow after building image. It is mounted to the docker container.
