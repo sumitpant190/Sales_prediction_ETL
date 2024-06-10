@@ -7,6 +7,7 @@
 ### Building the Docker Image
 
 Use the `docker build` command to build your Docker image from the Dockerfile. This command creates an image according to the instructions in the Dockerfile.
+It contains necessary libraries like Pyspark, Pandas, Scikitlearn, PostgresQL, etc
 
 ```bash
 docker build -t your-image-name .
