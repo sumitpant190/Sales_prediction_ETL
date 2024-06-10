@@ -1,1 +1,19 @@
+# Sales_prediction_ETL
 
+## Overview
+
+## Building and Running with Docker
+
+### Building the Docker Image
+
+Use the `docker build` command to build your Docker image from the Dockerfile. This command creates an image according to the instructions in the Dockerfile.
+
+```bash
+docker build -t your-image-name .
+```
+
+### Running the container
+
+```bash
+docker-compose up -d
+```
