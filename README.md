@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            padding: 20px;
         }
         h1, h2, h3 {
             color: #333;
@@ -52,4 +53,26 @@
 
     <h2>Running the ETL Pipeline</h2>
     <ol>
-        <li><strong>Execute the Pipeline</strong>: Run the Airflow DAG or execute the Python script directly to run the ET
+        <li><strong>Execute the Pipeline</strong>: Run the Airflow DAG or execute the Python script directly to run the ETL pipeline. The pipeline performs the following steps:
+            <ul>
+                <li>Loads data from CSV files into Spark DataFrames.</li>
+                <li>Preprocesses the data by cleaning, transforming, and encoding categorical features.</li>
+                <li>Loads the preprocessed data into a PostgreSQL database.</li>
+                <li>Trains machine learning models using the preprocessed data.</li>
+                <li>Evaluates model performance using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R²).</li>
+                <li>Deploys the trained model using Streamlit for local web-based visualization.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Scheduling the Pipeline (Optional)</h2>
+    <p>
+        If you want to automate the execution of the ETL pipeline at regular intervals, you can use Apache Airflow to schedule the tasks. Follow the instructions provided in the Airflow documentation to set up and configure the DAG for scheduling.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        With the completion of these steps, you should have a fully functional ETL pipeline for processing sales data, including model deployment for local visualization using Streamlit. The pipeline can be run manually or scheduled to run automatically at specified intervals, ensuring that the data remains up-to-date and readily available for analysis.
+    </p>
+</body>
+</html>
